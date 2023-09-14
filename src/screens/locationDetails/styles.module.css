@@ -1,0 +1,26 @@
+.fragment {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image: url("../../assests/images/greenFieldBg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mainIndexRow {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 1rem;
+}
+.mainContainerLeft {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.customCardltn {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  background-color: #5aa24ea3;
+}

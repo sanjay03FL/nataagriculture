@@ -1,0 +1,19 @@
+.mainRow {
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 3px 3px rgba(56, 65, 74, 0.1);
+  background-color: #c9ecd8;
+}
+.secondHeader {
+  background-color: red;
+  padding: 0.2rem;
+}
+.secondHeader > div {
+  font-size: 28px;
+  font-weight: 700;
+}
+.btn {
+  width: 120px;
+  font-weight: 600;
+  text-align: left;
+}
