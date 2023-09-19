@@ -87,7 +87,10 @@ const LocationMap = () => {
         scrollWheelZoom={false}
         style={{ height: "80vh", outline: "none" }}
       >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"  />
+        <TileLayer
+          url="
+          https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=60346fab835b4800b5603eb07d726e6a"
+        />
         {places.map((place, index) => (
           <Marker
             key={index}
@@ -98,7 +101,22 @@ const LocationMap = () => {
               iconSize: [30, 30],
             })}
           >
-            <Popup>{place.name}</Popup>
+            <Popup>
+              <div style={{ backgroundColor: place.color, color: "#fff" }}>
+                <div className="d-flex w-100">
+                  {["Summary", "Activities", "List", "Weather"].map((elements, index) => {
+                    return (
+                      <div
+                        className="text-center"
+                        style={{ width: "1000px", padding: "1rem", borderRight: "2px solid white" }}
+                      >
+                        {elements}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </Popup>
           </Marker>
         ))}
       </MapContainer>
